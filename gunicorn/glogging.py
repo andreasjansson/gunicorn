@@ -93,6 +93,7 @@ class LazyWriter(object):
         self.fileobj = None
         self.lock = threading.Lock()
         self.mode = mode
+        self.fileno = 2
 
     def open(self):
         if self.fileobj is None:
